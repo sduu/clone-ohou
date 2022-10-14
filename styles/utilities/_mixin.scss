@@ -38,6 +38,11 @@ $flex-map: (
     line-height: 2rem;
   }
 
+  @if ($size== rg) {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+
   @if ($size== md) {
     font-size: 2rem;
     line-height: 2.8rem;
@@ -60,16 +65,17 @@ $flex-map: (
 
 //   @include responsive(D)
 //   @include responsive(T)
+
 /* responsive */
 @mixin responsive($screen) {
-  @if ($screen == 'T') {
+  @if ($screen == T) {
     /* 태블릿 */
     @media screen and (min-width: $md-breakpoint) {
       @content;
     }
   }
 
-  @if ($screen == 'D') {
+  @if ($screen == D) {
     /* 데스크탑 */
     @media screen and (min-width: $lg-breakpoint) {
       @content;

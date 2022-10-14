@@ -1,0 +1,35 @@
+.section_todaydeal {
+  @include center-xy;
+}
+
+.todaydeal_inner {
+  background-color: aquamarine;
+  height: 100;
+}
+
+.section_todaydeal ul a {
+  @include flex(center, between);
+  @include responsive('T') {
+    @include flex(center, between, column);
+  }
+}
+
+.section_todaydeal ul li {
+  display: none;
+}
+
+.section_todaydeal ul li:first-child {
+  display: inline-block;
+}
+
+.section_todaydeal ul {
+  @include responsive('T') {
+    @include flex(center, between);
+  }
+}
+
+.section_todaydeal ul li {
+  @include responsive('T') {
+    display: inline-block;
+  }
+}
