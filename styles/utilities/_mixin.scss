@@ -1,5 +1,7 @@
-@function _get-flex-value($key) {
-  @return map-get($flex-map, $key);
+@mixin center-xy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 $flex-map: (
@@ -11,10 +13,8 @@ $flex-map: (
   center: center,
 );
 
-@mixin center-xy {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@function _get-flex-value($key) {
+  @return map-get($flex-map, $key);
 }
 
 // @inclue flex(between)
