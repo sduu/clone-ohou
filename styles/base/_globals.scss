@@ -18,3 +18,25 @@
     max-width: 1440px;
   }
 }
+
+.mb-only {
+  @media screen and (min-width: $md-breakpoint) {
+    display: none !important;
+  }
+}
+
+.tb-only {
+  @media screen and (max-width: ($md-breakpoint - 1)) {
+    display: none !important;
+  }
+
+  @media screen and (min-width: $lg-breakpoint) {
+    display: none !important;
+  }
+}
+
+.dt-only {
+  @media screen and (max-width: ($lg-breakpoint - 1)) {
+    display: none !important;
+  }
+}
