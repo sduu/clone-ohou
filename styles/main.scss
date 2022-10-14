@@ -1,10 +1,13 @@
-@import './utilities/mixin';
 @import './utilities/variables';
+@import './utilities/mixin';
+
 @import './base/normalize';
 @import './base/reset';
 @import './base/globals';
+
 @import './components/section_title';
 @import './components/todaydeal_card';
 @import './components/section_plus';
 @import './components/todaydeal_mobile_only';
+
 @import './layouts/todaydeal_section';
