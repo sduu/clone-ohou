@@ -1,0 +1,27 @@
+.section_todaystory {
+    background-color: wheat;
+    @include center-xy;
+}
+
+.lists_todaystory {
+    @include flex;
+    flex-wrap: wrap;
+}
+
+.lists_todaystory li {
+    margin-top: 40px;
+}
+
+.img_todaystory {
+    width: 100%;
+}
+
+.txt_desc {
+    margin-top: 12px;
+}
+
+.menu_todaystory {
+    width: 100%;
+    background-color: aqua;
+    // display: inline-block;
+}
