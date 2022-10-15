@@ -512,7 +512,7 @@ em {
 
 .lists_todaystory {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -520,6 +520,7 @@ em {
 
 .lists_todaystory li {
   margin-top: 40px;
+  width: 40%;
 }
 
 .img_todaystory {
@@ -531,6 +532,10 @@ em {
 }
 
 .menu_todaystory {
-  width: 100%;
   background-color: aqua;
+}
+
+.menu_todaystory a {
+  padding: 20px;
+  padding-left: 20px;
 }/*# sourceMappingURL=main.css.map */
