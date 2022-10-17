@@ -1,7 +1,8 @@
 .section_todaystory {
-    // background-color: wheat;
     @include center-xy;
 }
+
+/* 모바일 */
 
 .lists_todaystory {
     @include flex(flex-start,stretch);
@@ -15,9 +16,27 @@
 }
 
 .lists_todaystory li {
-    &:hover {
-        transform:  scale(1.05);
+    &:hover img{
+        transform: scale(1.05);
       }
+}
+
+@media screen and (max-width: ($md-breakpoint)-1px) {
+    .user_desc {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        white-space: nowrap !important;
+    }
+  }
+
+.box_img {
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .img_todaystory {
@@ -30,6 +49,7 @@
     font-size: 13px;
     font-weight: 700;
 }
+
 
 .menu_todaystory {
     @include flex(flex-start,stretch,column);
@@ -58,3 +78,37 @@
     font-size: 13px;
     font-weight: 700;
 }
+
+/* 태블릿 */
+
+  .lists_todaystory {
+    @include responsive(T) {
+        flex-wrap: nowrap;
+    }
+  }
+
+.user_desc {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+  .userimg_todaystory {
+    // display: inline-block;
+    border-radius: 50%;
+    height: 25px;
+    padding-right: 5px;
+  }
+
+  .txt_nickname {
+    display: inline-block;
+    
+    font-size: 12px;
+  }
+
+
+//   .txt_nickname {
+//     position: absolute;
+//     bottom: 20px;
+//   }
