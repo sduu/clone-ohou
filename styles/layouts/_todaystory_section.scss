@@ -10,10 +10,14 @@
     gap:10px;
 }
 
-.lists_todaystory li {
+.list_todaystory {
     margin-top: 10px;
     width: 49%;
 }
+// .list_todaystory.story {
+//     display: flex;
+// }
+
 
 .lists_todaystory li {
     &:hover img{
