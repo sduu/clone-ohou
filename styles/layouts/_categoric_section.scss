@@ -4,6 +4,7 @@
 
 .container_categoric_product {
     display: flex;
+    position: relative;
 }
 
 .item_categoric_product {
@@ -28,3 +29,36 @@
         font-size: 14px;
         font-weight: 500;
     }
+
+.fa-chevron-left{
+  position:absolute;
+  top: 50%;
+  left: -10px;
+  transform: translate(0%, -50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 10;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgb(63 71 77 / 15%);
+  font-size: 20px;
+  line-height: 1.7;
+}
+.fa-chevron-right{
+  position:absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 10;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgb(63 71 77 / 15%);
+  font-size: 20px;
+  line-height: 1.7;
+}
